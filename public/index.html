@@ -5,7 +5,6 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
   <title>Thank you!</title>
 </head>
 
@@ -13,12 +12,147 @@
 
   <div id="app"></div>
 
- 
-    <script src="https://car.travis.ro/vue/vue.global.js"></script>
+  <div class="card-group principal">
+    <div class="card main first">
+      <div class="card-body body1">
+        <div class="text">
+          <p class="thank-you-text">THANK YOU FOR THE RESERVATION!</p>
+          <p class="confirmation-mail-text">A CONFIRMATION EMAIL IS ALREADY IN YOUR INBOX.</p>
+        </div>
+
+        <div class="social-icons">
+          <a href="#" class="btn-social"><ion-icon name="logo-facebook"></ion-icon></a>
+          <a href="#" class="btn-social"><ion-icon name="logo-whatsapp"></ion-icon></a>
+          <a href="#" class="btn-social"><ion-icon name="logo-instagram"></ion-icon></a>
+          <a href="#" class="btn-social"><ion-icon name="logo-youtube"></ion-icon></a>
+        </div>
+
+      </div>
+    </div>
+    <div class="card main second">
+      <div class="card-body">
+
+        <div class="card-group">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Reservation details</h5>
+              <p class="card-text">Reservation number : </p>
+              <p class="card-text">Car : </p>
+              <p class="card-text">Preluare : </p>
+              <p class="card-text">Predare : </p>
+              <p class="card-text">Car : </p>
+              <p class="card-text">Perioada inchiriere : </p>
+              <p class="card-text">Car location : </p>
+              <p class="card-text">Flight Number : </p>
+              <p class="card-text">Special Request : </p>
+              <p class="card-text" style="font-weight: bold; font-size: 25px;">WARRANTY : </p>
+            </div>
+          </div>
+  
+  
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Important</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card details">
+          <div class="card-body">
+            <h5 class="card-title">The STANDARD package includes:</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://car.travis.ro/vue/vue.global.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 
 <style lang="scss">
- 
+
+  .principal{
+    height: 100vh;
+  }
+
+  .main {
+    border-radius: 0;
+  }
+
+  .card-title {
+    margin-bottom: 20px;
+    font-size: 30px;
+  }
+
+  .first {
+    background: url('haikey.svg') center/cover no-repeat;
+  }
+
+  .body1 {
+      text-align: center;
+      padding: 20px;
+      margin: 100px;
+      text-align: left;
+    }
+
+    .text {
+      margin-top: 20px;
+    }
+
+    .thank-you-text, .confirmation-mail-text {
+      color: #333;
+    }
+
+    .thank-you-text {
+      font-size: 100px;
+      font-weight: bold;
+    }
+
+    .confirmation-mail-text {
+      font-size: 30px;
+    }
+
+    @media only screen and (max-width: 900px) {
+      .body1 {
+      text-align: center;
+      margin: 20px;
+      text-align: left;
+    }
+
+      .thank-you-text {
+      font-size: 60px;
+      font-weight: bold;
+    }
+
+    .confirmation-mail-text {
+      font-size: 30px;
+    }
+}
+
+    .btn-social {
+      display: inline-block;
+      color: black;
+      margin-right: 20px;
+      font-size: 40px;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    .btn-social:hover {
+      opacity: 0.5;
+    }
+
+    .details {
+      margin-top: 10px;
+    }
+
+
 </style>
 
 <script>
@@ -29,7 +163,7 @@
       };
     },
     methods: {
-    
+
     },
   }
 
