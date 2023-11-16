@@ -48,37 +48,95 @@
               <p class="card-text" style="font-weight: bold; font-size: 25px;">WARRANTY : </p>
             </div>
           </div>
-  
-  
+
+
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Important</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <h5 class="card-title">Important Info</h5>
+              <p class="card-text"></p>
+              <div class="alert alert-warning" role="alert">
+                Pentru informatii suplimentare si urgente ne puteti contacta telefonic la numarul de telefon :
+              </div>
+              <div class="phone-number" style="width: 100%; text-align: center; margin-top: 20px;">
+                <div class="alert alert-light" role="alert" style="text-align: center;">
+                  <p style="font-size: 50px; font-weight: bold;">+40752220222</p>
+                </div>
+              </div>
+
+              <div class="alert alert-light" role="alert" style="text-align: center;">
+                <p style="font-size: 30px; font-weight: bold;">ENJOY THE VACATION AND DRIVE SAFE!</p>
+              </div>
+
             </div>
           </div>
         </div>
 
         <div class="card details">
           <div class="card-body">
-            <h5 class="card-title">The STANDARD package includes:</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <h5 class="card-title">The <span style="color: #f9c706;">STANDARD</span> package includes:</h5>
+
+            <button type="button" class="btn btn-light question">3 zi(le) inchiriere in Romania</button>
+            <button type="button" class="btn btn-light question">1350 km (+0.2 €/ km suplimentar)</button>
+            <button type="button" class="btn btn-light question">Preluare auto (60 €)</button>
+            <button type="button" class="btn btn-light question">Predare auto (60 €)</button>
+            <button type="button" class="btn btn-light question">Asistenta telefonica in caz de urgenta 24/7</button>
+            <button type="button" class="btn btn-light question">TVA 19%</button>
+            <button type="button" class="btn btn-light question">1 sofer suplimentar</button>
+            <button type="button" class="btn btn-light question">Taxa spalare auto</button>
+
+            <button type="button" class="btn btn-warning question" data-bs-container="body" data-bs-toggle="popover"
+              data-bs-placement="top"
+              data-bs-content="Este inclusa in tariful de inchiriere si cuprinde asigurare RCA si asigurare CASCO (cu fransiza / responsabilitate partiala a utilizatorului) pentru dauna si furt. Se depune intreaga garantie. Riscuri neacoperite: jante/capace roti, anvelope, parbriz masina, interior masina. In caz de dauna sau furt, se retine 100% din garantia depusa la preluarea masinii.">
+              Protectie STANDARD Cover (cu fransiza / responsabilitate partiala) [?]
+            </button>
+
+            <button type="button" class="btn btn-warning question" data-bs-container="body" data-bs-toggle="popover"
+              data-bs-placement="top"
+              data-bs-content="Rezervarea poate fi anulata gratuit cu pana la 7 zile inainte de momentul inchirierii, iar avansul platit se ramburseaza integral. In cazul anularii rezervarii cu mai putin de 7 zile inainte de momentul inchirierii, din avansul platit se va retine o taxa de anulare, astfel:
+              > 50 EUR pentru rezervari cu valoarea tarifului de inchiriere auto (fara serviciile optionale) de pana la 500 EUR;
+              > 100 EUR pentru rezervari cu valoare tarifului de inchiriere auto (fara serviciile optionale) de peste 500 EUR.">
+              Tarif rambursabil in cazul anularii rezervarii pana la 7 zile inainte de inchiriere [?]
+            </button>
+
+            <button type="button" class="btn btn-warning question" data-bs-container="body" data-bs-toggle="popover"
+              data-bs-placement="top" data-bs-content="Serviciu disponibil gratuit in perioada decembrie - martie.">
+              Cauciucuri de iarna [?]
+            </button>
+
+            <button type="button" class="btn btn-warning question" data-bs-container="body" data-bs-toggle="popover"
+              data-bs-placement="top"
+              data-bs-content="Optiune valabila in limita disponibilitatii masinii in momentul solicitarii.">
+              Timp suplimentar gratuit (max. 2 ore) [?]
+            </button>
+
+            <button type="button" class="btn btn-warning question" data-bs-container="body" data-bs-toggle="popover"
+              data-bs-placement="top"
+              data-bs-content="Permite rezervarea gratuita si blocarea unei masini la tariful ofertat, pentru max. 72 ore. La expirarea termenului de plata, rezervarea se poate anula automat.">
+              Plata mai tarziu (max. 72 ore) [?]
+            </button>
+
+            <button type="button" class="btn btn-warning question" data-bs-container="body" data-bs-toggle="popover"
+              data-bs-placement="top"
+              data-bs-content="Este permisa modificarea de data, ora, locatie de preluare/predare, autovehicul, tip pachet de servicii SMART (Budget, Standard, Plus), servicii optionale, in limita disponibilitatii, fara plata unei taxe. Daca tariful rezultat in urma modificarii este mai mare decat cel initial, se va achita diferenta de pret.">
+              Modificare gratuita a rezervarii [?]
+            </button>
+
           </div>
         </div>
-
-
       </div>
     </div>
   </div>
 
 
   <script src="https://car.travis.ro/vue/vue.global.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="https://unpkg.com/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
 </body>
 
 <style lang="scss">
-
-  .principal{
+  .principal {
     height: 100vh;
   }
 
@@ -96,37 +154,38 @@
   }
 
   .body1 {
-      text-align: center;
-      padding: 20px;
-      margin: 100px;
-      text-align: left;
-    }
+    text-align: center;
+    padding: 20px;
+    margin: 100px;
+    text-align: left;
+  }
 
-    .text {
-      margin-top: 20px;
-    }
+  .text {
+    margin-top: 20px;
+  }
 
-    .thank-you-text, .confirmation-mail-text {
-      color: #333;
-    }
+  .thank-you-text,
+  .confirmation-mail-text {
+    color: #333;
+  }
 
-    .thank-you-text {
-      font-size: 100px;
-      font-weight: bold;
-    }
+  .thank-you-text {
+    font-size: 100px;
+    font-weight: bold;
+  }
 
-    .confirmation-mail-text {
-      font-size: 30px;
-    }
+  .confirmation-mail-text {
+    font-size: 30px;
+  }
 
-    @media only screen and (max-width: 900px) {
-      .body1 {
+  @media only screen and (max-width: 900px) {
+    .body1 {
       text-align: center;
       margin: 20px;
       text-align: left;
     }
 
-      .thank-you-text {
+    .thank-you-text {
       font-size: 60px;
       font-weight: bold;
     }
@@ -134,33 +193,49 @@
     .confirmation-mail-text {
       font-size: 30px;
     }
-}
+  }
 
-    .btn-social {
-      display: inline-block;
-      color: black;
-      margin-right: 20px;
-      font-size: 40px;
-      transition: opacity 0.3s ease-in-out;
-    }
+  .btn-social {
+    display: inline-block;
+    color: black;
+    margin-right: 20px;
+    font-size: 40px;
+    transition: opacity 0.3s ease-in-out;
+  }
 
-    .btn-social:hover {
-      opacity: 0.5;
-    }
+  .btn-social:hover {
+    opacity: 0.5;
+  }
 
-    .details {
-      margin-top: 10px;
-    }
+  .details {
+    margin-top: 10px;
+  }
 
-
+  .question {
+    margin: 8px;
+  }
 </style>
 
 <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    console.log('test');
+    const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
+    const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl));
+  });
+</script>
+
+<!-- <script>
+  import { createApp } from 'vue';
+
   export default {
     data() {
       return {
 
       };
+    },
+    mounted() {
+      const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
+      const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl));
     },
     methods: {
 
@@ -169,7 +244,7 @@
 
   const app = createApp(App);
   app.mount('#app');
+</script> -->
 
-</script>
 
 </html>
