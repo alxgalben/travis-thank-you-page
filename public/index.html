@@ -18,6 +18,8 @@
         <div class="text">
           <p class="thank-you-text">THANK YOU FOR THE RESERVATION!</p>
           <p class="confirmation-mail-text">A CONFIRMATION EMAIL IS ALREADY IN YOUR INBOX.</p>
+          
+          <p style="font-size: 15px;">Pentru informatii suplimentare si urgente ne puteti contacta telefonic la numarul de telefon : +40752220222</p>
         </div>
 
         <div class="social-icons">
@@ -39,35 +41,54 @@
             
             <div class="card" style="border: 0;">
               <div class="card-body">
-              <h5 class="card-title">Reservation details</h5>
+                <div class="alert alert-light" role="alert">
+                  <h5 class="card-title">Reservation details</h5>
               <p class="card-text">Reservation number : </p>
-              <p class="card-text">Car : </p>
               <p class="card-text">Preluare : </p>
               <p class="card-text">Predare : </p>
               <p class="card-text">Car : </p>
               <p class="card-text">Perioada inchiriere : </p>
               <p class="card-text">Car location : </p>
-              <p class="card-text">Flight Number : </p>
               <p class="card-text">Special Request : </p>
-              <p class="card-text" style="font-weight: bold; font-size: 25px;">WARRANTY : </p>
+              <p class="card-text">Flight Number : </p>
+                </div>
+
+              <div class="alert alert-light" role="alert">
+                <h5 class="card-title">Financial details</h5>
+                <p class="card-text">Detalii plata : </p>
+                <p class="card-text">Tarif total : </p>
+                <p class="card-text" style="font-weight: bold;">DEPOSIT/WARRANTY : </p>
+              </div>
               </div>
             </div>
 
-            <div class="card" style="border: 0;">
-              <div class="card-body">
-                <h5 class="card-title">Important Info</h5>
-                <p class="card-text"></p>
-                <div class="alert alert-warning" role="alert">
-                  Pentru informatii suplimentare si urgente ne puteti contacta telefonic la numarul de telefon :
-                </div>
-                <div class="phone-number" style="width: 100%; text-align: center; margin-top: 20px;">
-                  <div class="alert alert-light" role="alert" style="text-align: center;">
-                    <p style="font-size: 50px; font-weight: bold;">+40752220222</p>
-                  </div>
-                </div>
-  
-              </div>
+
+
+
+
+
+
+            <!-- ASTA APARE DOAR DACA CLIENTUL NU A PLATIT INCA -->
+
+            <div class="alert alert-warning" role="alert" style="margin: 0 15px 0 15px; font-size: 18px;">
+              Pentru garantarea rezervarii, te rugam sa :
+
+              <ul class="list-group list-group-numbered" style="margin-top: 10px;">
+                <li class="list-group-item">platesti in maxim 72 de ore un avans de 50 EUR pe <a href="https://rentacar.travis.ro/plata">pagina noastra</a>.</li>
+                <li class="list-group-item">platesti integral pe <a href="https://rentacar.travis.ro/plata">pagina noastra</a>.</li>
+              </ul>
             </div>
+
+            <!-- ASTA APARE DOAR DACA CLIENTUL NU A PLATIT INCA -->
+
+
+
+
+
+
+
+
+
 
           </div>
 
@@ -181,7 +202,7 @@
   }
 
   .confirmation-mail-text {
-    font-size: 30px;
+    font-size: 25px;
   }
 
   @media only screen and (max-width: 900px) {
@@ -216,6 +237,7 @@
   .question {
     margin: 8px;
     width: 100%;
+    text-align: left;
   }
 
   .red-circle {
